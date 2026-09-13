@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Naturaleza Abierta</title>
+
+<meta name="description" content="Naturaleza Abierta · Bienestar, conocimiento ancestral y experiencias para volver a ti.">
+
+<style>
+
+/* =========================================================
+   NATURALEZA ABIERTA
+   MINI LANDING INTELIGENTE
+
+   DISEÑO MOBILE FIRST
+   ========================================================= */
+
+:root {
+    --verde: #405746;
+    --verde-oscuro: #304636;
+    --verde-suave: #617565;
+
+    --crema: #f7f3ea;
+    --blanco: #fffdf8;
+
+    --dorado: #b79b63;
+    --dorado-suave: #eadfc8;
+
+    --texto: #30372f;
+    --gris: #747970;
+
+    --sombra: 0 10px 30px rgba(48, 55, 47, 0.08);
+}
+
+
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--crema);
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+#naturaleza-abierta {
+
+    width: 100%;
+    min-height: 100vh;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(183,155,99,0.13),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(64,87,70,0.10),
+            transparent 30%
+        ),
+
+        var(--crema);
+
+    color: var(--texto);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+   ========================================================= */
+
+.na-container {
+
+    width: min(620px, 92%);
+
+    margin: 0 auto;
+
+    padding:
+        35px 0 30px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.na-logo {
+
+    text-align: center;
+
+    margin-bottom: 24px;
+}
+
+.na-logo img {
+
+    display: block;
+
+    width: auto;
+
+    max-width: 230px;
+
+    max-height: 115px;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.na-intro {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.na-intro h1 {
+
+    margin: 0 0 10px;
+
+    color: var(--verde);
+
+    font-size:
+        clamp(27px, 7vw, 39px);
+
+    line-height: 1.15;
+
+    font-weight: 500;
+}
+
+.na-frase {
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    font-style: italic;
+
+    color: var(--gris);
+
+    max-width: 500px;
+
+    margin: 0 auto 12px;
+}
+
+.na-descripcion {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: var(--gris);
+
+    max-width: 480px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   SEPARADOR
+   ========================================================= */
+
+.na-separator {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 24px 0;
+}
+
+.na-separator span {
+
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        rgba(64,87,70,0.16);
+}
+
+.na-separator b {
+
+    color: var(--dorado);
+
+    font-size: 17px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.na-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.na-button {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 78px;
+
+    padding:
+        14px 16px;
+
+    gap: 14px;
+
+    background:
+        rgba(255,253,248,0.90);
+
+    border:
+        1px solid
+        rgba(64,87,70,0.13);
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    color: var(--texto);
+
+    box-shadow: var(--sombra);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.na-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 14px 35px
+        rgba(48,55,47,0.12);
+
+    border-color:
+        rgba(64,87,70,0.25);
+}
+
+.na-button:active {
+
+    transform:
+        scale(0.985);
+}
+
+
+/* =========================================================
+   ICONOS
+   ========================================================= */
+
+.na-icon {
+
+    flex: 0 0 48px;
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        #eee6d7;
+
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   TEXTO BOTONES
+   ========================================================= */
+
+.na-button-text {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.na-button-text strong {
+
+    display: block;
+
+    color: var(--verde);
+
+    font-size: 17px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.na-button-text small {
+
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12.5px;
+
+    line-height: 1.45;
+
+    color: var(--gris);
+}
+
+
+/* =========================================================
+   FLECHA
+   ========================================================= */
+
+.na-arrow {
+
+    flex: 0 0 28px;
+
+    width: 28px;
+
+    text-align: center;
+
+    color: var(--verde);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 21px;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   REFERIDOS
+   ========================================================= */
+
+.na-button.referidos {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,253,248,0.95),
+            rgba(239,231,214,0.92)
+        );
+
+    border-color:
+        rgba(183,155,99,0.30);
+}
+
+.na-button.referidos .na-icon {
+
+    background:
+        var(--dorado-suave);
+}
+
+
+/* =========================================================
+   VALENTINA
+   ========================================================= */
+
+.na-button.valentina {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--verde),
+            #526d59
+        );
+
+    border: none;
+
+    color: white;
+
+    box-shadow:
+        0 14px 35px
+        rgba(45,63,50,0.22);
+}
+
+.na-button.valentina .na-icon {
+
+    background:
+        rgba(255,255,255,0.14);
+}
+
+.na-button.valentina .na-button-text strong {
+
+    color: white;
+}
+
+.na-button.valentina .na-button-text small {
+
+    color:
+        rgba(255,255,255,0.80);
+}
+
+.na-button.valentina .na-arrow {
+
+    color: white;
+}
+
+
+/* =========================================================
+   NOTA
+   ========================================================= */
+
+.na-note {
+
+    text-align: center;
+
+    margin:
+        12px auto 0;
+
+    font-family: Arial, sans-serif;
+
+    color: var(--gris);
+
+    font-size: 11.5px;
+
+    line-height: 1.5;
+
+    max-width: 500px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.na-footer {
+
+    text-align: center;
+
+    padding:
+        30px 0 10px;
+
+    color: var(--gris);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+.na-footer .marca {
+
+    color: var(--verde);
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   =========================================================
+   MODAL DE VALENTINA
+   =========================================================
+   ========================================================= */
+
+.na-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 999999;
+
+    display: none;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    padding: 15px;
+
+    background:
+        rgba(35,45,37,0.55);
+
+    backdrop-filter:
+        blur(5px);
+}
+
+.na-modal.active {
+
+    display: flex;
+}
+
+
+/* =========================================================
+   CAJA DEL MODAL
+   ========================================================= */
+
+.na-modal-box {
+
+    width: min(540px, 100%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background:
+        var(--blanco);
+
+    border-radius:
+        28px 28px 20px 20px;
+
+    padding:
+        25px 20px 20px;
+
+    box-shadow:
+        0 -10px 50px
+        rgba(0,0,0,0.18);
+
+    animation:
+        naModalIn 0.25s ease;
+}
+
+@keyframes naModalIn {
+
+    from {
+
+        transform:
+            translateY(40px);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform:
+            translateY(0);
+
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   CABECERA MODAL
+   ========================================================= */
+
+.na-modal-header {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.na-modal-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin:
+        0 auto 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 19px;
+
+    background:
+        var(--verde);
+
+    color: white;
+
+    font-size: 27px;
+}
+
+.na-modal-header h2 {
+
+    margin:
+        0 0 7px;
+
+    color:
+        var(--verde);
+
+    font-size: 24px;
+
+    font-weight: 500;
+}
+
+.na-modal-header p {
+
+    margin: 0 auto;
+
+    color: var(--gris);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    max-width: 420px;
+}
+
+
+/* =========================================================
+   OPCIONES VALENTINA
+   ========================================================= */
+
+.na-valentina-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.na-option {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    min-height: 62px;
+
+    padding:
+        10px 12px;
+
+    background:
+        #faf8f2;
+
+    border:
+        1px solid
+        rgba(64,87,70,0.12);
+
+    border-radius: 17px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        transform 0.18s ease,
+        background 0.18s ease,
+        border-color 0.18s ease;
+}
+
+.na-option:hover {
+
+    background:
+        #f3eee3;
+
+    border-color:
+        rgba(64,87,70,0.25);
+
+    transform:
+        translateY(-1px);
+}
+
+.na-option-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex:
+        0 0 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background:
+        #eee6d7;
+
+    font-size: 19px;
+}
+
+.na-option-text {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.na-option-text strong {
+
+    display: block;
+
+    color:
+        var(--verde);
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    line-height: 1.25;
+
+    margin-bottom: 2px;
+}
+
+.na-option-text small {
+
+    display: block;
+
+    color:
+        var(--gris);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.35;
+}
+
+.na-option-arrow {
+
+    font-family: Arial, sans-serif;
+
+    color:
+        var(--verde);
+
+    font-size: 19px;
+
+    opacity: 0.55;
+}
+
+
+/* =========================================================
+   CERRAR
+   ========================================================= */
+
+.na-close {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--gris);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.na-close:hover {
+
+    color: var(--verde);
+}
+
+
+/* =========================================================
+   TABLET / PC
+   ========================================================= */
+
+@media (min-width: 700px) {
+
+    .na-container {
+
+        width:
+            min(680px, 88%);
+
+        padding-top:
+            50px;
+    }
+
+    .na-modal {
+
+        align-items: center;
+    }
+
+    .na-modal-box {
+
+        border-radius:
+            28px;
+
+        max-height:
+            85vh;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+   ========================================================= */
+
+.na-button:focus-visible,
+.na-option:focus-visible,
+.na-close:focus-visible {
+
+    outline:
+        3px solid
+        rgba(183,155,99,0.70);
+
+    outline-offset:
+        3px;
+}
+
+</style>
+
+
+<!-- =========================================================
+     CONTENIDO
+     ========================================================= -->
+
+<div class="na-container">
+
+
+    <!-- =====================================================
+         LOGO
+         ===================================================== -->
+
+    <div class="na-logo">
+
+        <img
+            src="https://www.naturalezaabierta.com/wp-content/uploads/2026/03/cropped-cropped-solo-logo-WEB2.png"
+            alt="Naturaleza Abierta"
+        >
+
+    </div>
+
+
+    <!-- =====================================================
+         INTRO
+         ===================================================== -->
+
+    <div class="na-intro">
+
+        <h1>
+            Bienvenido a<br>
+            Naturaleza Abierta
+        </h1>
+
+        <div class="na-frase">
+            Un espacio para volver a ti.
+        </div>
+
+        <div class="na-descripcion">
+
+            Explora nuestras experiencias,
+            productos y espacios de acompañamiento.
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SEPARADOR
+         ===================================================== -->
+
+    <div class="na-separator">
+
+        <span></span>
+
+        <b>✦</b>
+
+        <span></span>
+
+    </div>
+
+
+    <!-- =====================================================
+         BOTONES PRINCIPALES
+         ===================================================== -->
+
+    <div class="na-buttons">
+
+
+        <!-- =================================================
+             LIBRO
+             ================================================= -->
+
+        <a
+            href="https://www.naturalezaabierta.com/landing-suscripcion-libro-respirar-sentir-y-sonreir/"
+            class="na-button"
+        >
+
+            <span class="na-icon">
+                📖
+            </span>
+
+            <span class="na-button-text">
+
+                <strong>
+                    Respirar, Sentir y Sonreír
+                </strong>
+
+                <small>
+                    Vive GRATIS una experiencia guiada
+                    inspirada en nuestro libro interactivo.
+                </small>
+
+            </span>
+
+            <span class="na-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =================================================
+             MARIBEL
+             ================================================= -->
+
+        <a
+            href="https://www.naturalezaabierta.com/maribel-gomez-sanacion-arcangelical/"
+            class="na-button"
+        >
+
+            <span class="na-icon">
+                ✨
+            </span>
+
+            <span class="na-button-text">
+
+                <strong>
+                    Experiencia con Maribel Gómez
+                </strong>
+
+                <small>
+                    Conoce su propuesta y reserva
+                    tu sesión personalizada.
+                </small>
+
+            </span>
+
+            <span class="na-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =================================================
+             JOSE
+             ================================================= -->
+
+        <a
+            href="https://www.naturalezaabierta.com/jose-vegas-shamanismo/"
+            class="na-button"
+        >
+
+            <span class="na-icon">
+                🔥
+            </span>
+
+            <span class="na-button-text">
+
+                <strong>
+                    Sesión telefónica con José Vegas
+                </strong>
+
+                <small>
+                    Conoce la propuesta y encuentra
+                    el espacio para tu consulta.
+                </small>
+
+            </span>
+
+            <span class="na-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =================================================
+             CATALOGO
+             ================================================= -->
+
+        <a
+            href="https://catalogo.naturalezaabierta.com/"
+            class="na-button"
+        >
+
+            <span class="na-icon">
+                🛍️
+            </span>
+
+            <span class="na-button-text">
+
+                <strong>
+                    Catálogo Naturaleza Abierta
+                </strong>
+
+                <small>
+                    Descubre nuestros productos
+                    y experiencias de bienestar.
+                </small>
+
+            </span>
+
+            <span class="na-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =================================================
+             REFERIDOS
+             CAMBIA SOLO EL HREF CUANDO TENGAS LA URL REAL
+             ================================================= -->
+
+        <a
+            href="https://catalogo.naturalezaabierta.com/programa-de-referidos/"
+            class="na-button referidos"
+        >
+
+            <span class="na-icon">
+                💰
+            </span>
+
+            <span class="na-button-text">
+
+                <strong>
+                    Programa de Referidos
+                </strong>
+
+                <small>
+                    Comparte Naturaleza Abierta
+                    y gana comisiones recomendando nuestros productos.
+                </small>
+
+            </span>
+
+            <span class="na-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <!-- =================================================
+             VALENTINA
+             NO LLEVA URL.
+             ABRE EL SELECTOR INTELIGENTE.
+             ================================================= -->
+
+        <button
+            type="button"
+            class="na-button valentina"
+            id="na-open-valentina"
+        >
+
+            <span class="na-icon">
+                💬
+            </span>
+
+            <span class="na-button-text">
+
+                <strong>
+                    Hablar con Valentina
+                </strong>
+
+                <small>
+                    Dime qué te interesa y te orientar é
+                    sobre el camino adecuado.
+                </small>
+
+            </span>
+
+            <span class="na-arrow">
+                →
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div class="na-note">
+
+        También puedes escribir directamente por WhatsApp.
+        Valentina recibirá el contexto de lo que buscas.
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="na-footer">
+
+        <div class="marca">
+            Naturaleza Abierta
+        </div>
+
+        <div>
+            Conocimiento · Bienestar · Experiencias
+        </div>
+
+        <div>
+            © Naturaleza Abierta
+        </div>
+
+    </footer>
+
+</div>
+
+
+<!-- =========================================================
+     MODAL INTELIGENTE DE VALENTINA
+     ========================================================= -->
+
+<div
+    class="na-modal"
+    id="na-valentina-modal"
+    aria-hidden="true"
+>
+
+    <div
+        class="na-modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="na-valentina-title"
+    >
+
+        <div class="na-modal-header">
+
+            <div class="na-modal-icon">
+                💬
+            </div>
+
+            <h2 id="na-valentina-title">
+                Hola, soy Valentina
+            </h2>
+
+            <p>
+                Cuéntame qué te interesa y prepararé
+                tu mensaje para que podamos orientarte
+                desde el primer momento.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             =================================================
+             ZONA FÁCIL DE EDITAR
+             =================================================
+             Para agregar una nueva opción:
+
+             1. Copia cualquier bloque .na-option
+             2. Cambia el texto
+             3. Cambia el mensaje dentro de
+                data-message
+             ================================================= -->
+
+        <div class="na-valentina-options">
+
+
+            <!-- LIBRO -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: LIBRO. Estoy interesado(a) en Respirar, Sentir y Sonreír y quisiera conocer más sobre el libro interactivo."
+            >
+
+                <span class="na-option-icon">
+                    📖
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Respirar, Sentir y Sonreír
+                    </strong>
+
+                    <small>
+                        Libro interactivo · 113 páginas
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- PRODUCTOS -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: PRODUCTOS. Estoy interesado(a) en conocer los productos de bienestar de Naturaleza Abierta y quisiera recibir información."
+            >
+
+                <span class="na-option-icon">
+                    🍫
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Productos de bienestar
+                    </strong>
+
+                    <small>
+                        Quiero conocer los productos disponibles.
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- MARIBEL -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: MARIBEL. Estoy interesado(a) en conocer la consulta o experiencia con Maribel Gómez y quisiera recibir más información."
+            >
+
+                <span class="na-option-icon">
+                    ✨
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Consulta con Maribel
+                    </strong>
+
+                    <small>
+                        Información y acompañamiento personalizado.
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- JOSE -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: JOSE. Estoy interesado(a) en conocer la sesión telefónica o consulta con José Vegas y quisiera recibir más información."
+            >
+
+                <span class="na-option-icon">
+                    🔥
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Consulta con José Vegas
+                    </strong>
+
+                    <small>
+                        Información sobre la sesión telefónica.
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- CATALOGO -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: CATALOGO. Quiero conocer el catálogo de productos y experiencias de Naturaleza Abierta."
+            >
+
+                <span class="na-option-icon">
+                    🛍️
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Ver el catálogo
+                    </strong>
+
+                    <small>
+                        Productos y experiencias disponibles.
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- REFERIDOS -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: REFERIDOS. Quiero conocer cómo funciona el programa de referidos de Naturaleza Abierta y cómo puedo participar."
+            >
+
+                <span class="na-option-icon">
+                    💰
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Programa de Referidos
+                    </strong>
+
+                    <small>
+                        Quiero conocer cómo puedo participar.
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- OTRA PREGUNTA -->
+
+            <button
+                type="button"
+                class="na-option"
+                data-message="Hola Valentina 😊 Vengo del perfil de Naturaleza Abierta en redes sociales. INTERESADO: OTRA CONSULTA. Tengo una pregunta y quisiera que me orientaras."
+            >
+
+                <span class="na-option-icon">
+                    ❓
+                </span>
+
+                <span class="na-option-text">
+
+                    <strong>
+                        Tengo otra pregunta
+                    </strong>
+
+                    <small>
+                        Quiero hablar directamente con Valentina.
+                    </small>
+
+                </span>
+
+                <span class="na-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- =================================================
+             CERRAR
+             ================================================= -->
+
+        <button
+            type="button"
+            class="na-close"
+            id="na-close-valentina"
+        >
+
+            Cerrar
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   NATURALEZA ABIERTA
+   SISTEMA INTELIGENTE DE VALENTINA
+   ========================================================= */
+
+
+/* =========================================================
+   CONFIGURACIÓN PRINCIPAL
+   ========================================================= */
+
+const NA_CONFIG = {
+
+    /* Número de WhatsApp de Valentina */
+
+    whatsapp:
+        "584221482602"
+
+};
+
+
+/* =========================================================
+   ELEMENTOS
+   ========================================================= */
+
+const naOpen =
+    document.getElementById(
+        "na-open-valentina"
+    );
+
+const naModal =
+    document.getElementById(
+        "na-valentina-modal"
+    );
+
+const naClose =
+    document.getElementById(
+        "na-close-valentina"
+    );
+
+
+/* =========================================================
+   ABRIR MODAL
+   ========================================================= */
+
+naOpen.addEventListener(
+    "click",
+    function() {
+
+        naModal.classList.add(
+            "active"
+        );
+
+        naModal.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+);
+
+
+/* =========================================================
+   CERRAR MODAL
+   ========================================================= */
+
+function cerrarValentina() {
+
+    naModal.classList.remove(
+        "active"
+    );
+
+    naModal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+/* =========================================================
+   BOTÓN CERRAR
+   ========================================================= */
+
+naClose.addEventListener(
+    "click",
+    cerrarValentina
+);
+
+
+/* =========================================================
+   CERRAR TOCANDO EL FONDO
+   ========================================================= */
+
+naModal.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            event.target === naModal
+        ) {
+
+            cerrarValentina();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   CERRAR CON ESCAPE
+   ========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape" &&
+            naModal.classList.contains("active")
+        ) {
+
+            cerrarValentina();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   CREAR MENSAJE DE WHATSAPP
+   ========================================================= */
+
+document
+    .querySelectorAll(
+        ".na-option"
+    )
+    .forEach(
+        function(option) {
+
+            option.addEventListener(
+                "click",
+                function() {
+
+                    const mensaje =
+                        option.getAttribute(
+                            "data-message"
+                        );
+
+                    const url =
+                        "https://wa.me/" +
+                        NA_CONFIG.whatsapp +
+                        "?text=" +
+                        encodeURIComponent(
+                            mensaje
+                        );
+
+
+                    /* Cerramos el modal */
+
+                    cerrarValentina();
+
+
+                    /* Abrimos WhatsApp */
+
+                    window.location.href =
+                        url;
+
+                }
+            );
+
+        }
+    );
+
+</script>
+
+</div>
+
+</html>
